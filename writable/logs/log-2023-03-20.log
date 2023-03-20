@@ -1,0 +1,115 @@
+CRITICAL - 2023-03-20 03:05:18 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(190): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-03-20 03:05:48 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(190): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+ERROR - 2023-03-20 02:43:02 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'db_presensi', 3306, '', 0)
+#1 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\app\Controllers\Employee.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\system\CodeIgniter.php(934): App\Controllers\Employee->index()
+#8 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+#9 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\LENOVO...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\app\Controllers\Employee.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\system\CodeIgniter.php(934): App\Controllers\Employee->index()
+#7 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+#8 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\LENOVO...')
+#11 {main}
+CRITICAL - 2023-03-20 02:43:02 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `employees`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Employee.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-20 03:26:39 --> Declaration of App\Models\EmployeeModel::update($id, $data) must be compatible with CodeIgniter\Model::update($id = null, $data = null): bool
+in APPPATH\Models\EmployeeModel.php on line 17.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-03-20 03:26:40 --> Declaration of App\Models\EmployeeModel::update($id, $data) must be compatible with CodeIgniter\Model::update($id = null, $data = null): bool
+in APPPATH\Models\EmployeeModel.php on line 17.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-03-20 03:26:41 --> Declaration of App\Models\EmployeeModel::update($id, $data) must be compatible with CodeIgniter\Model::update($id = null, $data = null): bool
+in APPPATH\Models\EmployeeModel.php on line 17.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-03-20 03:26:42 --> Declaration of App\Models\EmployeeModel::update($id, $data) must be compatible with CodeIgniter\Model::update($id = null, $data = null): bool
+in APPPATH\Models\EmployeeModel.php on line 17.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-03-20 03:27:04 --> Declaration of App\Models\EmployeeModel::update($id, $data) must be compatible with CodeIgniter\Model::update($id = null, $data = null): bool
+in APPPATH\Models\EmployeeModel.php on line 17.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-03-20 03:27:04 --> Declaration of App\Models\EmployeeModel::update($id, $data) must be compatible with CodeIgniter\Model::update($id = null, $data = null): bool
+in APPPATH\Models\EmployeeModel.php on line 17.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-03-20 03:27:05 --> Declaration of App\Models\EmployeeModel::update($id, $data) must be compatible with CodeIgniter\Model::update($id = null, $data = null): bool
+in APPPATH\Models\EmployeeModel.php on line 17.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-03-20 03:27:05 --> Declaration of App\Models\EmployeeModel::update($id, $data) must be compatible with CodeIgniter\Model::update($id = null, $data = null): bool
+in APPPATH\Models\EmployeeModel.php on line 17.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-03-20 03:27:32 --> Declaration of App\Models\EmployeeModel::update($id, $data) must be compatible with CodeIgniter\Model::update($id = null, $data = null): bool
+in APPPATH\Models\EmployeeModel.php on line 17.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-03-20 03:27:33 --> Declaration of App\Models\EmployeeModel::update($id, $data) must be compatible with CodeIgniter\Model::update($id = null, $data = null): bool
+in APPPATH\Models\EmployeeModel.php on line 17.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-03-20 03:27:33 --> Declaration of App\Models\EmployeeModel::update($id, $data) must be compatible with CodeIgniter\Model::update($id = null, $data = null): bool
+in APPPATH\Models\EmployeeModel.php on line 17.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-03-20 03:27:33 --> Declaration of App\Models\EmployeeModel::update($id, $data) must be compatible with CodeIgniter\Model::update($id = null, $data = null): bool
+in APPPATH\Models\EmployeeModel.php on line 17.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2023-03-20 03:31:43 --> mysqli_sql_exception: Unknown column '_method' in 'field list' in C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `employe...', 0)
+#1 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `employe...')
+#2 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `employe...')
+#3 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `employe...', Array, false)
+#4 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\app\Models\EmployeeModel.php(22): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\app\Controllers\Employee.php(87): App\Models\EmployeeModel->ubah('1', Array)
+#6 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\system\CodeIgniter.php(934): App\Controllers\Employee->update('1')
+#7 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+#8 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\LENOVO\Downloads\codeigniter4-framework-v4.3.2-0-ge91e4fa\codeigniter4-framework-e91e4fa\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\LENOVO...')
+#11 {main}
+CRITICAL - 2023-03-20 03:31:43 --> Unknown column '_method' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `employees` SET `_method` = :_method:, `name` = :name:, `email` = :email:, `password` = :password:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\EmployeeModel.php(22): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Employee.php(87): App\Models\EmployeeModel->ubah('1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->update('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
